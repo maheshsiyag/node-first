@@ -20,4 +20,5 @@ rl.question('What do you think of Node.js? ', (answer) => {
 
     rl.close();
 });
-app.listen(3000, () => { console.log('Server is open'); });
+var port = process.SET_PORT || 3000;
+app.listen(port, () => { console.log('Server is open'); });
